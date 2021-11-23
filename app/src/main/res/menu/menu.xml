@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/it_wifi"
+        android:icon="@drawable/ip"
+        android:title="@string/wifi" />
+    <item
+        android:id="@+id/it_wifiscanner"
+        android:icon="@drawable/analyze"
+        android:title="@string/wifi_scanner" />
+    <item
+        android:id="@+id/it_device"
+        android:icon="@drawable/device"
+        android:title="@string/device" />
+
+    <item
+        android:id="@+id/it_settings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings" />
+
+</menu>
+

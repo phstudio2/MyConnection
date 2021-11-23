@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialogbackground"
+    tools:context=".MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipetorefreshwifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bt_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/sv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/connectedlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background2"
+                android:paddingBottom="80dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_type"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/connection_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/wifi" />
+
+                <TextView
+                    android:id="@+id/text_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/connection_type"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_type"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_type"
+                    app:layout_constraintTop_toTopOf="@+id/image_type" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_type"
+                    app:layout_constraintTop_toTopOf="@+id/text_type"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/publicip"
+                    app:layout_constraintTop_toBottomOf="@+id/type" />
+
+                <ImageView
+                    android:id="@+id/image_publicip"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/public_ip"
+                    app:layout_constraintStart_toStartOf="@+id/image_type"
+                    app:layout_constraintTop_toBottomOf="@+id/type"
+                    app:srcCompat="@drawable/publicip" />
+
+                <TextView
+                    android:id="@+id/text_publicip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/public_ip"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_publicip"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_publicip"
+                    app:layout_constraintTop_toTopOf="@+id/image_publicip" />
+
+                <TextView
+                    android:id="@+id/publicip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_publicip"
+                    app:layout_constraintTop_toTopOf="@+id/text_publicip"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/internalip"
+                    app:layout_constraintTop_toBottomOf="@+id/publicip" />
+
+                <ImageView
+                    android:id="@+id/image_internalip"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/internal_ip"
+                    app:layout_constraintStart_toStartOf="@+id/image_publicip"
+                    app:layout_constraintTop_toBottomOf="@+id/publicip"
+                    app:srcCompat="@drawable/internalip" />
+
+                <TextView
+                    android:id="@+id/text_internalip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/internal_ip"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_internalip"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_internalip"
+                    app:layout_constraintTop_toTopOf="@+id/image_internalip" />
+
+                <TextView
+                    android:id="@+id/internalip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_internalip"
+                    app:layout_constraintTop_toTopOf="@+id/text_internalip"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/gateway"
+                    app:layout_constraintTop_toBottomOf="@+id/internalip" />
+
+                <ImageView
+                    android:id="@+id/image_gateway"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/Gateway"
+                    app:layout_constraintStart_toStartOf="@+id/image_internalip"
+                    app:layout_constraintTop_toBottomOf="@+id/internalip"
+                    app:srcCompat="@drawable/gateway" />
+
+                <TextView
+                    android:id="@+id/text_gateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/Gateway"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_gateway"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_gateway"
+                    app:layout_constraintTop_toTopOf="@+id/image_gateway" />
+
+                <TextView
+                    android:id="@+id/gateway"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_gateway"
+                    app:layout_constraintTop_toTopOf="@+id/text_gateway"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/dhcp"
+                    app:layout_constraintTop_toBottomOf="@+id/gateway" />
+
+                <ImageView
+                    android:id="@+id/image_dhcp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/DHCP"
+                    app:layout_constraintStart_toStartOf="@+id/image_gateway"
+                    app:layout_constraintTop_toBottomOf="@+id/gateway"
+                    app:srcCompat="@drawable/dhcp" />
+
+                <TextView
+                    android:id="@+id/text_dhcp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/DHCP"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_dhcp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_dhcp"
+                    app:layout_constraintTop_toTopOf="@+id/image_dhcp" />
+
+                <TextView
+                    android:id="@+id/dhcp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_dhcp"
+                    app:layout_constraintTop_toTopOf="@+id/text_dhcp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/lease"
+                    app:layout_constraintTop_toBottomOf="@+id/dhcp" />
+
+                <ImageView
+                    android:id="@+id/image_lease"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/Lease"
+                    app:layout_constraintStart_toStartOf="@+id/image_dhcp"
+                    app:layout_constraintTop_toBottomOf="@+id/dhcp"
+                    app:srcCompat="@drawable/lease" />
+
+                <TextView
+                    android:id="@+id/text_lease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/Lease"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_lease"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_lease"
+                    app:layout_constraintTop_toTopOf="@+id/image_lease" />
+
+                <TextView
+                    android:id="@+id/lease"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_lease"
+                    app:layout_constraintTop_toTopOf="@+id/text_lease"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/dns1"
+                    app:layout_constraintTop_toBottomOf="@+id/lease" />
+
+                <ImageView
+                    android:id="@+id/image_dns1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/DNS1"
+                    app:layout_constraintStart_toStartOf="@+id/image_lease"
+                    app:layout_constraintTop_toBottomOf="@+id/lease"
+                    app:srcCompat="@drawable/dns1" />
+
+                <TextView
+                    android:id="@+id/text_dns1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/DNS1"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_dns1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_dns1"
+                    app:layout_constraintTop_toTopOf="@+id/image_dns1" />
+
+                <TextView
+                    android:id="@+id/dns1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_dns1"
+                    app:layout_constraintTop_toTopOf="@+id/text_dns1"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/dns2"
+                    app:layout_constraintTop_toBottomOf="@+id/dns1" />
+
+                <ImageView
+                    android:id="@+id/image_dns2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/DNS2"
+                    app:layout_constraintStart_toStartOf="@+id/image_dns1"
+                    app:layout_constraintTop_toBottomOf="@+id/dns1"
+                    app:srcCompat="@drawable/dns2" />
+
+                <TextView
+                    android:id="@+id/text_dns2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/DNS2"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_dns2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_dns2"
+                    app:layout_constraintTop_toTopOf="@+id/image_dns2" />
+
+                <TextView
+                    android:id="@+id/dns2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_dns2"
+                    app:layout_constraintTop_toTopOf="@+id/text_dns2"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/dialogline"
+                    app:layout_constraintBottom_toTopOf="@+id/vpn"
+                    app:layout_constraintTop_toBottomOf="@+id/dns2" />
+
+                <ImageView
+                    android:id="@+id/image_vpn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/vpn"
+                    app:layout_constraintStart_toStartOf="@+id/image_dns2"
+                    app:layout_constraintTop_toBottomOf="@+id/dns2"
+                    app:srcCompat="@drawable/vpn" />
+
+                <TextView
+                    android:id="@+id/text_vpn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:text="@string/vpn"
+                    android:textColor="@color/dialogtext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_vpn"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image_vpn"
+                    app:layout_constraintTop_toTopOf="@+id/image_vpn"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/vpn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="left"
+                    android:text="@string/none"
+                    android:textColor="@color/dialogtext"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_vpn"
+                    app:layout_constraintTop_toTopOf="@+id/text_vpn"
+                    tools:ignore="RtlHardcoded" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/bt_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/layout_cancel"
+        android:text="@string/show_more"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

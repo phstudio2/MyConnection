@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_name"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/operator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sim" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/operator"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_name"
+                app:layout_constraintTop_toTopOf="@+id/image_name" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/none"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_name"
+                app:layout_constraintTop_toTopOf="@+id/text_name"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/image_hidden"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/country"
+                app:layout_constraintStart_toStartOf="@+id/image_name"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                app:srcCompat="@drawable/country" />
+
+            <TextView
+                android:id="@+id/text_hidden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/country"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_hidden"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_hidden"
+                app:layout_constraintTop_toTopOf="@+id/image_hidden" />
+
+            <TextView
+                android:id="@+id/hidden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/none"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/text_hidden"
+                app:layout_constraintTop_toTopOf="@+id/text_hidden"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/mcc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/mcc"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hidden"
+                app:layout_constraintTop_toTopOf="@+id/text_hidden"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/dialogline"
+                app:layout_constraintBottom_toTopOf="@+id/strength"
+                app:layout_constraintTop_toBottomOf="@+id/mcc" />
+
+
+            <ImageView
+                android:id="@+id/image_strength"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/strength"
+                app:layout_constraintStart_toStartOf="@+id/image_hidden"
+                app:layout_constraintTop_toBottomOf="@+id/mcc"
+                app:srcCompat="@drawable/strength" />
+
+            <TextView
+                android:id="@+id/text_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/strength"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_strength"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_strength"
+                app:layout_constraintTop_toTopOf="@+id/image_strength" />
+
+            <TextView
+                android:id="@+id/strength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/dbm"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_strength"
+                app:layout_constraintTop_toTopOf="@+id/text_strength"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/image_level"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/signal"
+                app:layout_constraintStart_toStartOf="@+id/image_strength"
+                app:layout_constraintTop_toBottomOf="@+id/strength"
+                app:srcCompat="@drawable/level" />
+
+            <TextView
+                android:id="@+id/text_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/signal"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_level"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_level"
+                app:layout_constraintTop_toTopOf="@+id/image_level" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/none"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/text_level"
+                app:layout_constraintTop_toTopOf="@+id/text_level"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/level2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/five"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/level"
+                app:layout_constraintTop_toTopOf="@+id/text_level"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/dialogline"
+                app:layout_constraintBottom_toTopOf="@+id/speed"
+                app:layout_constraintTop_toBottomOf="@+id/level2" />
+
+            <ImageView
+                android:id="@+id/image_speed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/speed"
+                app:layout_constraintStart_toStartOf="@+id/image_level"
+                app:layout_constraintTop_toBottomOf="@+id/level2"
+                app:srcCompat="@drawable/speed" />
+
+            <TextView
+                android:id="@+id/text_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/speed"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_speed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_speed"
+                app:layout_constraintTop_toTopOf="@+id/image_speed" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/mbps"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_speed"
+                app:layout_constraintTop_toTopOf="@+id/text_speed"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/dialogline"
+                app:layout_constraintBottom_toTopOf="@+id/frequency"
+                app:layout_constraintTop_toBottomOf="@+id/speed" />
+
+            <ImageView
+                android:id="@+id/image_frequency"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/technology"
+                app:layout_constraintStart_toStartOf="@+id/image_speed"
+                app:layout_constraintTop_toBottomOf="@+id/speed"
+                app:srcCompat="@drawable/technology" />
+
+            <TextView
+                android:id="@+id/text_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/technology"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_frequency"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_frequency"
+                app:layout_constraintTop_toTopOf="@+id/image_frequency" />
+
+            <TextView
+                android:id="@+id/frequency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:text="@string/none"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_frequency"
+                app:layout_constraintTop_toTopOf="@+id/text_frequency"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/layout_cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frequency" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

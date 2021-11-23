@@ -1,0 +1,68 @@
+<resources>
+    <string name="cancel">Annuler</string>
+    <string name="settings">Réglages</string>
+    <string name="Yes">Oui</string>
+    <string name="No">Non</string>
+    <string name="Exit_app">Quittez l\'application</string>
+    <string name="close_app">Voulez-vous vraiment quitter cette application?</string>
+    <string name="share_mail">Téléchargez cette superbe application;)!</string>
+    <string name="email_text">Salut, Téléchargez My Connection depuis PHstudio!</string>
+    <string name="public_ip">IP publique:</string>
+    <string name="connection_type">Type de connexion:</string>
+    <string name="internal_ip">IP locale:</string>
+    <string name="Gateway">Passerelle:</string>
+    <string name="not_internet">Connexion réseau non disponible</string>
+    <string name="data">Données mobiles</string>
+    <string name="on">Activé</string>
+    <string name="off">Désactivé</string>
+    <string name="seconds">secondes</string>
+    <string name="minutes">minutes</string>
+    <string name="hours">heures</string>
+    <string name="days">jours</string>
+    <string name="datahours">1 heure</string>
+    <string name="notconnected">Pas connecté</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Bien</string>
+    <string name="medium">Demandeur</string>
+    <string name="weak">Moyen</string>
+    <string name="none">Rien</string>
+    <string name="hidden_ssid">SSID caché:</string>
+    <string name="textfalse">Faux</string>
+    <string name="strength">Force:</string>
+    <string name="signal">Signal:</string>
+    <string name="speed">La vitesse:</string>
+    <string name="frequency">La fréquence:</string>
+    <string name="channel">Canal:</string>
+    <string name="country">Pays:</string>
+    <string name="operator">Opérateur:</string>
+    <string name="technology">La technologie:</string>
+    <string name="texttrue">Vrai</string>
+    <string name="select_email">Sélectionnez une adresse e-mail</string>
+    <string name="notsupport">Votre système ne prend pas en charge.</string>
+    <string name="turnposition">Allumer la position</string>
+    <string name="wifi_scanner">Scanneur Wifi</string>
+    <string name="enablewifi">Le WiFi est désactivé. Nous devons l\'activer</string>
+    <string name="waitforscan">Attendez la fin du balayage ou mettez le poste en marche !</string>
+
+    <!-- Dialog layout -->
+    <string name="application_development">Développement d\'applications mobiles</string>
+    <string name="tetxt_about">A propos de nous</string>
+    <string name="text_contact">Nous contacter</string>
+    <string name="text_bug">Signaler un bogue</string>
+    <string name="text_share">Partager</string>
+    <string name="text_apps">Plus d\'applications</string>
+    <string name="text_privacy">Politique de confidentialité</string>
+    <string name="text_terms">Modalités et conditions</string>
+    <string name="text_settings">Paramètres</string>
+
+    <!-- Device layout -->
+    <string name="device">Dispositif</string>
+    <string name="brand">Marque:</string>
+    <string name="model">Modèle:</string>
+    <string name="os_version">Version du système d\'exploitation:</string>
+    <string name="mac">Adresse MAC:</string>
+    <string name="memory">Mémoire:</string>
+    <string name="show_more">Afficher plus d\'informations</string>
+    <string name="battery">Batterie:</string>
+    <string name="created">Créé par</string>
+</resources>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="cancel">Zrušit</string>
+    <string name="settings">Nastavení</string>
+    <string name="Yes">Ano</string>
+    <string name="No">Ne</string>
+    <string name="Exit_app">Ukončit aplikaci</string>
+    <string name="close_app">Opravdu chcete ukončit tuto aplikaci?</string>
+    <string name="share_mail">Stáhni si tuto skvělou aplikaci ;)!</string>
+    <string name="email_text">Ahoj, stáhni si My Connection od PHstudia!</string>
+    <string name="public_ip">Veřejná IP:</string>
+    <string name="connection_type">Typ připojení:</string>
+    <string name="internal_ip">Lokální IP:</string>
+    <string name="Gateway">Brána:</string>
+    <string name="not_internet">Síťové připojení není k dispozici</string>
+    <string name="data">Mobilní data</string>
+    <string name="on">Zapnuto</string>
+    <string name="off">Vypnuto</string>
+    <string name="seconds">sekund</string>
+    <string name="minutes">minut</string>
+    <string name="hours">hodin</string>
+    <string name="days">dní</string>
+    <string name="datahours">1 hodina</string>
+    <string name="notconnected">Nepřipojený</string>
+    <string name="excellent">Vynikající</string>
+    <string name="good">Dobrý</string>
+    <string name="medium">Ucházející</string>
+    <string name="weak">Střední</string>
+    <string name="none">Žádný</string>
+    <string name="hidden_ssid">Skryté SSID:</string>
+    <string name="textfalse">Nepravda</string>
+    <string name="strength">Síla:</string>
+    <string name="signal">Signál:</string>
+    <string name="speed">Rychlost:</string>
+    <string name="frequency">Frekvence:</string>
+    <string name="channel">Kanál:</string>
+    <string name="country">Země:</string>
+    <string name="operator">Operátor:</string>
+    <string name="technology">Technologie:</string>
+    <string name="texttrue">Pravda</string>
+    <string name="select_email">Vyberte e-mail</string>
+    <string name="notsupport">Váš systém nepodporuje.</string>
+    <string name="turnposition">Zapněte pozici</string>
+    <string name="wifi_scanner">Skener Wifi</string>
+    <string name="enablewifi">WiFi je vypnutá. Musíme ji zapnout</string>
+    <string name="waitforscan">Počkejte až skončí skenování nebo zapněte polohu!</string>
+
+    <!-- Dialog layout -->
+    <string name="application_development">Vývoj mobilních aplikací</string>
+    <string name="tetxt_about">O nás</string>
+    <string name="text_contact">Kontaktujte nás</string>
+    <string name="text_bug">Nahlásit chybu</string>
+    <string name="text_share">Sdílet</string>
+    <string name="text_apps">Více aplikací</string>
+    <string name="text_privacy">Zásady ochrany osobních údajů</string>
+    <string name="text_terms">Obchodní podmínky</string>
+    <string name="text_settings">Nastavení</string>
+
+    <!-- Device layout -->
+    <string name="device">Zařízení</string>
+    <string name="brand">Značka:</string>
+    <string name="model">Model:</string>
+    <string name="os_version">Verze OS:</string>
+    <string name="mac">MAC adresa:</string>
+    <string name="memory">Paměť:</string>
+    <string name="show_more">Zobrazit více informací</string>
+    <string name="battery">Baterie:</string>
+    <string name="created">Vytvořilo</string>
+</resources>

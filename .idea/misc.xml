@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/layout_cancel.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/drawable/layout_create.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/drawable/layout_send.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/drawable/layout_textbckg.xml" value="0.26481481481481484" />
+        <entry key="app/src/main/res/drawable/splash.xml" value="0.2601851851851852" />
+        <entry key="app/src/main/res/layout/activity_analyze.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_analyze_data.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_launch.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.41041666666666665" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_device.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_wifi.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_wifi2.xml" value="0.41041666666666665" />
+        <entry key="app/src/main/res/layout/fragment_wifiscanner.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_about.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/layout_battery.xml" value="0.4109375" />
+        <entry key="app/src/main/res/layout/layout_bug.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/layout_cancel.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/layout_create.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/layout_device.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_dialog.xml" value="0.24613800205973224" />
+        <entry key="app/src/main/res/layout/layout_send.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/layout_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_share.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/layout_spinner.xml" value="0.11423505572441743" />
+        <entry key="app/src/main/res/layout/simple_list_item.xml" value="0.41041666666666665" />
+        <entry key="app/src/main/res/layout/wifi_listview.xml" value="0.3963541666666667" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4109375" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.41041666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
