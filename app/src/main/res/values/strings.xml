@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">My Connection</string>
     <string name="app_package" translatable="false">com.phstudio.myconnection</string>
     <string name="developer_name" translatable="false">PH studio</string>
-    <string name="app_version" translatable="false">1.3</string>
+    <string name="app_version" translatable="false">1.4</string>
 
     <string name="about" translatable="false">https://phstudio2.webnode.com/home/</string>
     <string name="contact" translatable="false">https://phstudio2.webnode.com/contact/</string>
