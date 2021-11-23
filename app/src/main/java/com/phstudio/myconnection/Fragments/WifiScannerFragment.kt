@@ -121,6 +121,9 @@ class WifiScannerFragment : Fragment() {
             } else {
                 warning.visibility = View.VISIBLE
                 Toast.makeText(context, getString(R.string.turnposition), Toast.LENGTH_SHORT).show()
+                if (swipetorefresh.isRefreshing) {
+                    swipetorefresh.isRefreshing = false
+                }
             }
         }
     }

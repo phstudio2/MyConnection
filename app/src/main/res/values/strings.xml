@@ -67,7 +67,7 @@
     <string name="texttrue">True</string>
     <string name="select_email">Select email</string>
     <string name="notsupport">Your system does not support.</string>
-    <string name="turnposition">Turn on position</string>
+    <string name="turnposition">Turn on the location and refresh the page</string>
     <string name="wifi_scanner">Wifi Scanner</string>
     <string name="enablewifi">WiFi is disabled. We need to enable it</string>
     <string name="waitforscan">Wait for the scan to finish or turn on the position!</string>

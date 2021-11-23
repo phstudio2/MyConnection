@@ -39,7 +39,7 @@
     <string name="texttrue">Pravda</string>
     <string name="select_email">Vyberte e-mail</string>
     <string name="notsupport">Váš systém nepodporuje.</string>
-    <string name="turnposition">Zapněte pozici</string>
+    <string name="turnposition">Zapněte polohu a obnovte stránku</string>
     <string name="wifi_scanner">Skener Wifi</string>
     <string name="enablewifi">WiFi je vypnutá. Musíme ji zapnout</string>
     <string name="waitforscan">Počkejte až skončí skenování nebo zapněte polohu!</string>

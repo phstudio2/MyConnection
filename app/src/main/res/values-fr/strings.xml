@@ -39,7 +39,7 @@
     <string name="texttrue">Vrai</string>
     <string name="select_email">Sélectionnez une adresse e-mail</string>
     <string name="notsupport">Votre système ne prend pas en charge.</string>
-    <string name="turnposition">Allumer la position</string>
+    <string name="turnposition">Activez la localisation et rafraîchissez la page</string>
     <string name="wifi_scanner">Scanneur Wifi</string>
     <string name="enablewifi">Le WiFi est désactivé. Nous devons l\'activer</string>
     <string name="waitforscan">Attendez la fin du balayage ou mettez le poste en marche !</string>
