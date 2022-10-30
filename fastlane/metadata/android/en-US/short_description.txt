@@ -1,0 +1,1 @@
+This app show you information about your connection.

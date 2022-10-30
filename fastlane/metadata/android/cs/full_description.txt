@@ -1,0 +1,16 @@
+Zjistěte svou aktuální veřejnou IP adresu nebo rychlost připojení. Pokud neznáte svůj Wi-Fi kanál, použijte naši aplikaci!
+
+Aplikace ukazuje:
+● Typ připojení
+● Veřejnou IP adresu
+● Lokální IP adresu
+● Adresu výchozí brány
+● Adresu serveru DHCP
+● Doba propůjčení DHCP
+● Adresu serveru Domain Name System
+● Stav virtuální privátní sítě
+● Identifikátor vaší sady služeb
+● Informace o provozovateli mobilní sítě
+● Aktuální rychlost a sílu signálu internetu
+● Frekvenci a kanál Wi-Fi
+● A mnoho dalšího!

@@ -1,0 +1,16 @@
+Find out your current public IP address, or the speed of your connection. If you don't know your Wi-Fi channel use our app!
+
+App shows:
+● Connection type
+● Public IP address
+● Local IP address
+● Default gateway address
+● Dynamic Host Configuration Protocol server address
+● DHCP Lease Time in seconds
+● Domain Name System server address
+● State of Virtual private network
+● Your Service Set Identifier
+● Info about Mobile Network Operator
+● Current internet speed and signal strength
+● Frequency and Wi-Fi channel
+● And a lot of more!

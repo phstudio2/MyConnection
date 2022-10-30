@@ -1,0 +1,1 @@
+Tato aplikace zobrazuje informace o vašem připojení.
