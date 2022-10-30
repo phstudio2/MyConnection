@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dialogbackground"
-    tools:context=".Fragments.WifiScannerFragment">
+    android:background="@color/background"
+    tools:context=".fragments.WifiScannerFragment">
 
     <TextView
         android:id="@+id/warning"
@@ -13,13 +13,12 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/waitforscan"
+        android:text="@string/wait_for_scan"
         android:textColor="@color/text"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textSize="18sp" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipetorefreshwifiscanner"
+        android:id="@+id/srlWifiScanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

@@ -7,11 +7,8 @@
     <color name="line_background">#333333</color>
     <color name="text">#C9FFFFFF</color>
     <color name="design4">#26324a</color>
-    <color name="whitelight">#D8D8D8</color>
-    <color name="dialogtext">#c4c9d7</color>
-    <color name="dialogline">#b2b2b2</color>
-    <color name="dialogbackground">#333333</color>
-    <color name="dialogname">#FFFFFFFF</color>
-    <color name="background2">#333333</color>
+    <color name="white_light">#D8D8D8</color>
+    <color name="line">#b2b2b2</color>
+    <color name="background">#333333</color>
 
 </resources>

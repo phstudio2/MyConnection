@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/wifiFragment">
+
+    <fragment
+        android:id="@+id/wifiFragment"
+        android:name="com.phstudio.myconnection.fragments.WifiFragment"
+        android:label="fragment_wifi"
+        tools:layout="@layout/fragment_wifi" />
+    <fragment
+        android:id="@+id/wifiScannerFragment"
+        android:name="com.phstudio.myconnection.fragments.WifiScannerFragment"
+        android:label="fragment_wifiscanner"
+        tools:layout="@layout/fragment_wifiscanner" />
+    <fragment
+        android:id="@+id/deviceFragment"
+        android:name="com.phstudio.myconnection.fragments.DeviceFragment"
+        android:label="fragment_device"
+        tools:layout="@layout/fragment_device" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.phstudio.myconnection.fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

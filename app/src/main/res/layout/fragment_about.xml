@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/design4"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/about"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_phstudio" />
+
+            <TextView
+                android:id="@+id/tvDeveloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/developer"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ivLogo"
+                app:layout_constraintStart_toStartOf="@+id/ivLogo"
+                app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+            <TextView
+                android:id="@+id/tvApplicationDevelopment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/application_development"
+                android:textAllCaps="false"
+                android:textColor="@color/text"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/tvDeveloper"
+                app:layout_constraintStart_toStartOf="@+id/tvDeveloper"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeveloper" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="5dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btAbout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_apps"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btAbout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about2"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/website"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btAbout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about3"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <Button
+                    android:id="@+id/btAbout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_telegram"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btAbout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_github"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btAbout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about6"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_bug"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btAbout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about7"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_privacy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <Button
+                    android:id="@+id/btAbout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_about8"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/text_terms"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
